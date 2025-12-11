@@ -1,0 +1,7 @@
+//database connection file : mongodb + express
+//for connection 'mongoose' client is used
+
+import mongoose from "mongoose"; 
+const url = "mongodb://127.0.0.1:27017/eAuction";
+mongoose.connect(url);
+console.log("successfully connected to mongoDB database...");
