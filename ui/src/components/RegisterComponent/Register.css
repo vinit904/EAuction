@@ -1,0 +1,87 @@
+
+  
+
+
+
+
+
+  /* Center the form section */
+.form-section {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  flex-direction: column;
+  align-items: center;     /* vertical centering */
+  min-height: 100vh;       /* full viewport height */
+  padding: 2rem;
+  background-color: #000;  /* optional: match dark theme */
+}
+
+/* Optional: limit width and center text */
+.form-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+  
+  .form-field {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  label, legend {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #ddd;
+  }
+  input, textarea, select {
+    background: #0b0b0b;
+    border: 1px solid #333;
+    color: #eee;
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    outline: none;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #888;
+  }
+  input:focus, textarea:focus {
+    border-color: #555;
+    box-shadow: 0 0 0 3px rgba(255, 200, 0, 0.15);
+  }
+  fieldset {
+    border: 1px solid #222;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+  }
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.25rem;
+  }
+  .radio input {
+    margin-right: 0.4rem;
+    accent-color: #f5c518; /* warm yellow to match auction key vibe */
+  }
+  .form-actions {
+    margin-top: 1rem;
+  }
+  .btn-primary {
+    background: #f5c518;
+    color: #111;
+    border: none;
+    padding: 0.7rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background: #e2b515;
+  }
+
+  /* Make it responsive within your content area */
+  @media (max-width: 640px) {
+    .form-card {
+      width: 100%;
+    }
+  }
